@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DBS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="js/jquery.min.3.3.1.js"></script>
+    <script src="js/popper.min.1.14.7.js"></script>
+    <script src="js/bootstrap.min.4.3.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript">
+      window.moveTo(0, 0);
+      window.resizeTo(screen.availWidth, screen.availHeight);
+    </script>
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <div class="container-fluid mainContainer">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark dbsNavbar">
+        <a class="navbar-brand" href="#"
+          ><img class="dbsLogo" src="assets/dbs_bank_logosvg.png"
+        /></a>
+        <button class="btn btn-danger referBtn">Refer</button>
+        <button class="btn btn-danger offerBtn">
+          Offers<span class="offerCount">2</span>
+        </button>
+        <button
+          class="navbar-toggler hidden-sm-up pull-xs-right hamBurger"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="navbar-nav navbarForMobile">
+            <li class="nav-item dropdown dropdown-slide dropdown-hover">
+              <a
+                class="nav-link"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                data-value="1"
+                id="loginlink"
+                >Home
+              </a>
+            </li>
+            <li class="nav-item dropdown dropdown-slide dropdown-hover">
+              <a class="nav-link" href="#" id="registerLink">DigiGo </a>
+            </li>
+
+            <li class="nav-item  dropdown dropdown-slide dropdown-hover">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://www.dbs.com/in/index/default.page"
+                id="aboutLink"
+                >About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row" id="loginFormRow">
+        <div class="col-sm-12">
+          <center>
+            <form action="">
+              <div class="form-group">
+                <input
+                  style="color:white"
+                  class="form-control"
+                  placeholder="Username"
+                  id="username"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  style="color:white"
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  id="password"
+                />
+              </div>
+              <button class="btn btn-danger loginDigiGo">
+                Login
+              </button>
+            </form>
+          </center>
+        </div>
+      </div>
+      <div class="row" id="registerFormRow">
+        <div class="col-sm-12">
+          <center>
+            <form action="">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  placeholder="Height(cms)"
+                  id="height"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  placeholder="Weight(kg)"
+                  id="weight"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  placeholder="Body Fat"
+                  id="bodyFat"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  disabled
+                  placeholder="BMI"
+                  id="bmi"
+                />
+              </div>
+              <button class="btn btn-danger registerDigiGo">
+                Set Target
+              </button>
+            </form>
+          </center>
+        </div>
+      </div>
+      <div class="row" id="leaderBoard">
+        <div class="col-12">
+          <img class="img-fluid statistics" src="assets/statistics.png" />
+        </div>
+        <div class="col-sm-3 col-md-2 col-8">
+          <div class="progress" data-percentage="80">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                80%<br />
+                <span>completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            class="img-fluid cityRewards"
+            src="assets/cityrewards.png"
+          /><br />
+          <p class="myCityText">My City</p>
+        </div>
+        <div class="col-sm-12">
+          <p class="successPara">
+            Kudos! 20% more to achieve your target.
+          </p>
+          <p class="positionInfo">
+            Currently you are at the
+            <span class="currentPosition">position 5</span>. Achieve the target
+            by today to win a gift!
+          </p>
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Rewards</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Thahir</td>
+                <td>1</td>
+                <td>Running Kit</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>2</td>
+                <td>Shoes</td>
+              </tr>
+              <tr>
+                <td>Riya</td>
+                <td>3</td>
+                <td>T-Shirt</td>
+              </tr>
+              <tr>
+                <td>abc</td>
+                <td>4</td>
+                <td>-</td>
+              </tr>
+              <tr class="userPosition">
+                <td>Sumanth</td>
+                <td>5</td>
+                <td>-</td>
+              </tr>
+
+              <tr>
+                <td>ghi</td>
+                <td>6</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>def</td>
+                <td>7</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>jkl</td>
+                <td>8</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--register modal-->
+    <div
+      class="modal"
+      id="registerModal"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <center>
+              <div class="form-group">
+                <select class="form-control" id="selectedActivity">
+                  <option value="" selected disabled>Activity</option>
+                  <option value="">Running</option>
+                  <option value="">Cycling</option>
+                  <option value="">Swimming</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  placeholder="Kilometres"
+                  id="Kilometres"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  placeholder="Duration in mins"
+                  id="Duration"
+                />
+              </div>
+              <button class="btn btn-danger registerDigiGo" id="registerSubmit">
+                Submit
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--city rewards modal-->
+    <div
+      class="modal"
+      id="cityDBSRewards"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content dbsDigiCityModal">
+          <!-- Modal Header -->
+          <div class="modal-header dbsDigiCityModalHeader">
+            <h4 class="modal-title dbsDigiCityModalTitle">
+              Digital Green City
+            </h4>
+            <button
+              type="button"
+              class="close dbsDigiCityModalClose"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body dbsDigiCityModalBody">
+            <div class="row">
+              <div class="col-6 cityStats">
+                <p class="targetDistance">
+                  Target: <span class="distanceInKm">1000 Kms</span>
+                </p>
+                <p class="targetDistanceAchieved">
+                  Achieved:
+                  <span class="distanceInKmAchieved">600 Kms</span>
+                </p>
+                <p class="targetDistanceAchieved">
+                  My Contribution:
+                  <span class="distanceInKmAchieved">152 Kms</span>
+                </p>
+                <hr class="dbsDigiCityModalBodyHr" />
+                <p class="targetDistanceReward">
+                  Achievement Reward:
+                  <span class="treeReward">1K trees plantation</span>
+                </p>
+              </div>
+              <div class="col-6">
+                <div class="progress" data-percentage="60">
+                  <span class="progress-left">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">
+                    <div>
+                      60%<br />
+                      <span>completed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-dark cityTable">
+              <thead>
+                <tr>
+                  <th>City</th>
+                  <th>
+                    Achieved <span class="lowWeightFont">(kms/ mins)</span>
+                  </th>
+                  <th>Reward</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="myCityPosition">
+                  <td>Hyderabad</td>
+                  <td>
+                    600/ 855
+                  </td>
+                  <td>DBS Sponsored Marathon</td>
+                </tr>
+                <tr>
+                  <td>Kerala</td>
+                  <td>555/ 799</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Mumbai</td>
+                  <td>500/ 842</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Chennai</td>
+                  <td>410/ 390</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!--stats modal-->
+    <div
+      class="modal"
+      id="statsModal"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content dbsDigiCityModal">
+          <!-- Modal Header -->
+          <div class="modal-header dbsDigiCityModalHeader">
+            <h4 class="modal-title dbsDigiCityModalTitle">
+              Stats
+            </h4>
+            <button
+              type="button"
+              class="close dbsDigiCityModalClose"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body dbsDigiCityModalBody">
+            <div class="row">
+              <div class="col-12">
+                <p class="rewardInfo">
+                  Rewards: <span class="someCount">7</span>
+                </p>
+                <p class="rewardInfo">
+                  Marathons by DBS: <span class="someCount">34</span>
+                </p>
+                <p class="rewardInfo">
+                  Trees by DBS: <span class="someCount">1,02,456</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!--refer modal-->
+    <div
+      class="modal"
+      id="referModal"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content dbsDigiCityModal">
+          <!-- Modal Header -->
+          <div class="modal-header dbsDigiCityModalHeader">
+            <h4 class="modal-title dbsDigiCityModalTitleRefer">
+              Share the below link and earn rewards!
+            </h4>
+            <button
+              type="button"
+              class="close dbsDigiCityModalClose"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body dbsDigiCityModalBody">
+            <div class="row">
+              <div class="col-12">
+                <p class="rewardInfo">
+                  https://play.google.com/store/apps/details?id=com.dbs.in.digitalbank&hl=en_IN
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!--offers modal-->
+    <div
+      class="modal"
+      id="offerModal"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content dbsDigiCityModal">
+          <!-- Modal Header -->
+          <div class="modal-header dbsDigiCityModalHeader">
+            <h4 class="modal-title dbsDigiCityModalTitleGrab">
+              Grab now!
+            </h4>
+            <button
+              type="button"
+              class="close dbsDigiCityModalClose"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body dbsDigiCityModalBody">
+            <div class="row">
+              <div class="col-12">
+                <table class="table table-dark cityTable">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>
+                        Price
+                      </th>
+                      <th>Offer Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="myCityPosition">
+                      <td>Shoes</td>
+                      <td>
+                        10,520
+                      </td>
+                      <td>6,530</td>
+                    </tr>
+                    <tr>
+                      <td>T-shirt</td>
+                      <td>900</td>
+                      <td>900</td>
+                    </tr>
+                    <tr class="myCityPosition">
+                      <td>Bottle</td>
+                      <td>850</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Headset</td>
+                      <td>980</td>
+                      <td>980</td>
+                    </tr>
+                    <tr>
+                      <td>Stickers</td>
+                      <td>300</td>
+                      <td>300</td>
+                    </tr>
+                    <tr>
+                      <td>Gloves</td>
+                      <td>1000</td>
+                      <td>1000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/index.js"></script>
+  <script src="js/particles.min_forBubble.js"></script>
+  <script src="js/app_forBubble.js"></script>
+  <script>
+    //function disableclick(e){return e=e||window.event,key=e.keyCode,e.code==='F5'||e.code==='F12'||e.ctrlKey||e.altKey?!1:void 0}document.onkeypress=document.onmousedown=document.onkeydown=disableclick,$(document).on("contextmenu",function(e){e.preventDefault()});
+  </script>
+</html>
